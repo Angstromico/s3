@@ -1,0 +1,37 @@
+@import '../../App.scss';
+
+.WorkingSteps {
+  @extend .centerContainer;
+  @apply text-[#848d8d] text-center xl:text-left mt-20 mb-20 lg:mb-52 max-w-[1500px];
+  .step {
+    @apply grid grid-cols-1 xl:grid-cols-2 justify-center items-center w-full relative;
+    .textInfo {
+      h2 {
+        @apply text-4xl md:text-5xl font-bold my-12;
+      }
+      p {
+        @apply text-3xl md:text-4xl font-light;
+      }
+    }
+    .stuffed {
+      @apply w-full hidden lg:block;
+    }
+    img {
+      @apply hidden xl:block absolute right-[45%] top-28 scale-125;
+    }
+  }
+  .secondStep {
+    @extend .step;
+    @apply lg:mt-36;
+    .textInfo {
+      @apply lg:order-2 lg:ml-32;
+    }
+    img {
+      @apply left-[18%];
+    }
+  }
+  .thirdStep {
+    @extend .step;
+    @apply lg:mt-32;
+  }
+}

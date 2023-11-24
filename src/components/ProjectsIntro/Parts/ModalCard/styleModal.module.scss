@@ -1,0 +1,46 @@
+.modalCard {
+  @apply fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 pt-48 z-40 w-full text-white overflow-y-auto no-scrollbar;
+  .modalContainer {
+    @apply w-[95vw] md:w-[80vw] max-w-[1200px]  flex flex-col justify-center items-center z-0 h-full mt-[-77px] sm:mt-12 md:mt-64 overflow-hidden;
+  }
+  .modalRibbon {
+    @apply w-[95vw] md:w-[80vw] max-w-[1200px] bg-[#d2bb3f] py-6 fixed top-48 z-50 mx-[2rem] md:mx-[5rem];
+
+    h2 {
+      @apply ml-4 md:ml-12 text-5xl sm:text-6xl md:text-7xl font-bold;
+    }
+
+    h3 {
+      @apply text-3xl sm:text-4xl md:text-5xl font-thin ml-4 md:ml-12;
+    }
+
+    button {
+      @apply text-6xl sm:text-7xl md:text-8xl font-bold absolute right-4 top-6 md:top-8 md:right-12 mr-[1rem] md:mr-[3rem];
+    }
+  }
+
+  .modalBox {
+    @apply bg-[#5e696a] text-white w-full pb-12 pt-16 md:pb-16 md:pt-20 px-[2rem] md:px-[5rem] overflow-y-auto no-scrollbar h-[600px] sm:h-[700px] md:h-[800px];
+    .boxContainer {
+      @apply flex justify-center;
+    }
+    .carousel {
+      @apply w-full md:w-[90%];
+      img {
+        @apply w-full h-[350px] md:h-[400px] lg:h-[550px] object-cover mb-16 md:mb-24;
+      }
+      .specifications {
+        @apply mt-8;
+        h4 {
+          @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-5 md:mb-6;
+          span {
+            @apply font-thin;
+          }
+        }
+      }
+      p {
+        @apply mt-[4rem] md:mt-[6rem] text-xl sm:text-2xl md:text-3xl;
+      }
+    }
+  }
+}

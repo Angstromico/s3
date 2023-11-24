@@ -1,0 +1,83 @@
+@import '../Generals';
+
+.mainContainerAboutUs {
+  @apply w-full text-center;
+  .AboutUsContainer,
+  .logoContainer {
+    @apply flex flex-col;
+  }
+  .AboutUsContainer,
+  .logoContainer,
+  .numbersContainer {
+    @apply justify-center items-center;
+  }
+  .AboutUsContainer {
+    @apply w-full bg-cover bg-no-repeat relative flex-col pt-10 md:pt-40;
+    .imgCover {
+      @apply w-full h-full absolute top-0 left-0 bg-cover bg-no-repeat z-20;
+    }
+    .gradientCover {
+      @apply w-full h-full left-0 top-0 absolute inset-0 bg-gradient-to-b from-black  to-transparent z-[-5];
+    }
+    .title,
+    .epilogue {
+      @apply text-5xl lg:text-7xl md:text-[4.5rem] font-bold;
+    }
+    .title {
+      @apply text-[#d2bb3f] mb-8 mt-3 md:mb-3;
+    }
+    .goldenBar {
+      @extend .goldenB;
+      @apply hidden md:block;
+    }
+    .textContainer {
+      @apply text-white text-2xl md:text-4xl mb-8 max-w-[1350px];
+      p {
+        @apply my-4 mx-4;
+      }
+    }
+    .epilogue {
+      @apply my-10 text-black italic;
+    }
+  }
+
+  .numbersContainer {
+    @apply w-full max-w-[1500px] grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 my-24 mx-auto;
+    .card {
+      @apply w-full;
+      .title,
+      .number,
+      .subtitle {
+        @apply my-5;
+      }
+      .title,
+      .subtitle {
+        @apply text-3xl md:text-4xl;
+      }
+      .title {
+        @apply font-bold mb-3 text-[#848d8d];
+      }
+      .number {
+        @apply text-[#d2bb3f] text-[4.5rem] md:text-[6.5rem] font-bold;
+      }
+      .subtitle {
+        @apply text-[#7b8585] font-light;
+      }
+    }
+  }
+  .logoContainer {
+    @apply mx-auto w-full min-w-[25rem] md:min-w-[40rem] my-8 gap-9 md:gap-16;
+    h3 {
+      @apply text-[#848d8d] text-3xl md:text-5xl font-bold mb-[-6rem];
+    }
+    .logos {
+      @apply flex gap-3 md:gap-4 my-6;
+      .plus {
+        @apply text-[#d2bb3f] text-[15rem] font-bold;
+      }
+    }
+    img {
+      @apply max-h-[10rem] mt-36;
+    }
+  }
+}

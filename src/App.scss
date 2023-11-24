@@ -1,0 +1,42 @@
+@import './styles';
+
+.messageText {
+  @apply text-center text-5xl;
+}
+input.error,
+textarea.error {
+  @apply border-red-600 text-red-600;
+}
+
+p.error_field {
+  border-radius: 0.2rem;
+}
+
+p.error_field {
+  @apply bg-red-400 text-center rounded-md p-4 shadow-none text-[#d2bb3f] mb-4 w-[108%] sm:w-[106%] mx-auto font-bold;
+}
+
+input,
+textarea {
+  all: unset;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #2c2d2f inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(226 232 240) !important;
+}
+
+.Hero {
+  @media (max-width: 365px) {
+    font-size: 3.2rem !important;
+  }
+}
+.s3Btn {
+  @apply text-white text-3xl md:text-4xl font-bold transition-all duration-500  hover:bg-[#d2bb3f] rounded-xl p-4 md:p-6 bg-black flex gap-2;
+}

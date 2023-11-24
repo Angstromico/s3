@@ -1,0 +1,64 @@
+.menu {
+  @apply fixed top-0 left-0 z-[100] flex w-full flex-row justify-between text-white p-[2em] backdrop-blur-md;
+  background-color: rgba(44, 45, 47, 0.6);
+  .logo {
+    width: auto;
+    height: 90%;
+  }
+  .mobile {
+    @apply block md:hidden;
+  }
+  .items {
+    @apply hidden md:flex justify-between gap-4 xl:gap-16 items-center font-light text-3xl;
+    li {
+      @apply xl:mx-8;
+    }
+  }
+  li.currentPage {
+    @apply text-[#d2bb3f] font-bold;
+  }
+  .itemsMobile {
+    @apply flex h-screen w-[30rem] bg-[#2c2d2f] gap-4 items-start justify-center flex-col absolute top-0 transition-all duration-500 text-5xl px-6 pt-6 right-0;
+    .closeButtonContainer {
+      @apply relative w-full h-full;
+      button {
+        @apply absolute top-4 right-3 text-5xl text-[#2c2d2f] font-light bg-white rounded-full w-12 h-12;
+      }
+    }
+    .liContainer {
+      @apply relative w-full h-full;
+      .lis {
+        @apply absolute top-[-43rem] left-1;
+        li {
+          @apply list-none mt-6 text-left font-bold;
+        }
+      }
+    }
+    li.lang {
+      @apply flex gap-2;
+      span.another {
+        @apply scale-50;
+      }
+    }
+  }
+  .notItemsMobile {
+    @extend .itemsMobile;
+    @apply right-[-40rem];
+  }
+}
+
+li.lang {
+  @apply flex gap-3 relative cursor-pointer;
+  img {
+    @apply transition-all duration-700;
+  }
+  img.outsidedown {
+    @apply rotate-180;
+  }
+  span.another {
+    @apply absolute left-3 top-12 hidden;
+  }
+  span.another.show {
+    @apply block;
+  }
+}

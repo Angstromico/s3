@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "c/*": ["src/components/*"],
+      "a/*": ["src/assets/*"]
+    },
+    "jsx": "react",
+    "noImplicitAny": false
+  }
+}

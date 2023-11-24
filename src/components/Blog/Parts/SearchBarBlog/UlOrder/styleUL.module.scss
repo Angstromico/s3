@@ -1,0 +1,9 @@
+.searchUL {
+  @apply w-80 bg-[#2c2d2f] relative;
+  img {
+    @apply absolute top-[-1rem] md:top-2 right-0;
+  }
+  li {
+    @apply my-5;
+  }
+}

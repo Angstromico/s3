@@ -1,0 +1,31 @@
+.searchBar {
+  @apply bg-[#2c2d2f] w-full py-4 text-white mt-48 mb-12;
+  .btn {
+    @apply bg-[#d2bb3f] rounded-xl;
+  }
+  input {
+    @apply bg-white text-black py-4 px-4 font-bold mr-8;
+  }
+  /* clears the 'X' from Internet Explorer */
+  input[type='search']::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  input[type='search']::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  /* clears the 'X' from Chrome */
+  input[type='search']::-webkit-search-decoration,
+  input[type='search']::-webkit-search-cancel-button,
+  input[type='search']::-webkit-search-results-button,
+  input[type='search']::-webkit-search-results-decoration {
+    display: none;
+  }
+  li.top {
+    @apply absolute left-0 top-0;
+  }
+}

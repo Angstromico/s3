@@ -1,0 +1,39 @@
+.cardContainer {
+  @apply grid gap-4 grid-cols-1 w-[90%] 2xl:max-w-[1500px] my-12 mx-auto justify-center items-center text-[#2C2D2F];
+  .cardElements {
+    @apply w-full flex flex-col justify-center items-center my-8;
+    .card {
+      @apply w-[98vw] flex flex-col justify-center md:justify-start relative md:w-full h-[250px] md:h-[450px] lg:h-[500px];
+      img {
+        @apply md:w-full my-4 absolute h-full top-0 left-0;
+      }
+    }
+    .textSection {
+      @apply px-1 md:px-2 mt-8 text-left lg:text-center flex flex-col items-start md:items-center;
+      p {
+        @apply font-normal text-2xl md:text-4xl lg:text-5xl py-2;
+      }
+      p.deskHide {
+        @apply md:hidden;
+      }
+      p.resume {
+        @apply text-xl md:text-3xl lg:text-4xl text-[#5D696A] mt-12;
+      }
+      h2 {
+        @apply text-left py-1 font-bold text-4xl md:text-6xl lg:text-7xl pr-2 md:pr-4 mb-6;
+      }
+      .authorIntro {
+        @apply hidden md:flex gap-6 text-2xl md:text-4xl py-4 justify-center items-center;
+        img {
+          @apply h-10 w-10;
+        }
+      }
+      .blackLine {
+        @apply h-[1px] bg-black w-[30%] max-w-[30%];
+      }
+      a {
+        @apply bg-black  text-white hover:bg-[#d2bb3f] transition-all p-3 mt-12 lg:p-4 rounded-xl text-2xl md:text-4xl flex gap-4;
+      }
+    }
+  }
+}

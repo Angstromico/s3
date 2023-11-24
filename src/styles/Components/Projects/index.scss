@@ -1,0 +1,73 @@
+@import '../Generals';
+
+.ProjectsSection {
+  @extend .centerContainer;
+  &.intro {
+    @apply mt-52;
+  }
+  .textContainer {
+    @extend .introContainer;
+    h2 {
+      @extend .boldTitle;
+    }
+    .goldenBar {
+      @extend .goldenB;
+    }
+  }
+  .ProjectsGrid {
+    @apply grid grid-cols-1 md:grid-cols-3 max-w-[1500px] gap-4 w-full justify-center items-center mx-auto h-[1000px] md:h-[35rem] lg:h-[34rem] cursor-pointer;
+  }
+  .singleCard {
+    @apply w-full grid grid-cols-1 gap-2 my-2;
+    .card {
+      @apply mb-4 md:mb-0 h-[400px] md:h-[700px];
+      &.firstTwo {
+        @apply col-span-2;
+      }
+      &.secondTwo {
+        @apply col-span-3;
+      }
+    }
+  }
+  .twoCards {
+    @extend .singleCard;
+    @apply md:grid-cols-5;
+    .card {
+      @apply md:h-[500px];
+    }
+  }
+  .threeCards {
+    @extend .singleCard;
+    @apply md:grid-cols-3;
+    .card {
+      @apply md:h-[400px];
+    }
+  }
+}
+.card {
+  @apply relative h-full w-full overflow-hidden transition-all cursor-pointer;
+  img {
+    @apply absolute w-full h-full top-0 left-0 scale-125 duration-700 z-0;
+  }
+  &:hover .centerTitle {
+    @apply right-[-1rem];
+  }
+  .centerTitle {
+    @apply transition-all duration-700 z-50 absolute right-[-22rem] top-3;
+    h3 {
+      @apply text-white text-2xl md:text-3xl font-black bg-[#d2bb3f] rounded-xl py-6 md:py-5 px-12 md:px-14;
+    }
+  }
+  .labelTitle {
+    @apply absolute text-white text-4xl md:text-5xl right-[-55rem] font-black bg-[#d2bb3f] top-5 rounded-xl py-6 md:py-8 px-16 md:px-20 transition-all duration-700 z-50;
+  }
+  &:hover .centerTitle {
+    opacity: 1;
+  }
+  &:hover img {
+    @apply scale-100;
+  }
+  &:hover .labelTitle {
+    @apply right-[-1rem];
+  }
+}

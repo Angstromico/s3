@@ -1,0 +1,12 @@
+.optionsContainer {
+  @apply max-w-[1500px] flex justify-center items-center w-full text-lg sm:text-2xl md:text-4xl lg:text-5xl  gap-4 md:gap-6 lg:gap-8 my-20 mx-auto px-4 flex-wrap;
+  .option {
+    @apply py-6 px-3 sm:px-12 md:px-16 xl:px-20  border-r-[0.5px] font-light cursor-pointer;
+    &:last-of-type {
+      @apply border-r-0;
+    }
+    &.chosen {
+      @apply font-bold;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../App.scss';
+
+.AboutProjects {
+  @extend .centerContainer;
+  @apply my-8 text-center flex flex-col justify-center items-center;
+  .titleSection {
+    @apply w-full flex flex-col md:flex-col-reverse my-4 justify-center items-center;
+    .goldenBar {
+      @extend .goldenB;
+    }
+    h2 {
+      @extend .boldTitle;
+    }
+  }
+  p {
+    @extend .content;
+    @apply md:w-[70%] mb-16;
+    &:last-of-type {
+      @apply mb-2;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply h-full;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+footer {
+  margin-top: auto;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.pagination {
+  @apply flex justify-center items-center w-full gap-12 text-4xl my-12;
+  .arrow,
+  ul {
+    @apply cursor-pointer;
+  }
+  .arrow {
+    color: #d2bb3f;
+    @apply text-5xl my-12;
+  }
+  ul {
+    @apply flex justify-center items-center gap-12 text-4xl my-12;
+  }
+}
+
+.activeLink {
+  color: #d2bb3f;
+}

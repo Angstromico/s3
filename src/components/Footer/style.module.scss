@@ -1,0 +1,108 @@
+@import '../../styles/Mixins';
+
+.footer {
+  @include flex-center;
+  @apply bg-[#2c2d2f] pt-4 pb-6 px-8 md:py-12 md:px-12  w-full text-white;
+  .mobile {
+    @apply block md:hidden;
+    .logo {
+      @include flex-center;
+      @apply p-24;
+      img,
+      a img {
+        @apply h-32;
+      }
+    }
+    .icons {
+      @apply grid grid-cols-5 my-8;
+      .directions,
+      .socials {
+        @include flex-container(column, center, flex-start, nowrap);
+        .ico {
+          @include flex-container(column, center, flex-start, nowrap);
+          img {
+            @apply w-20 mb-6;
+          }
+          p {
+            @apply font-light text-xl mb-6 text-left w-60 sm:w-72;
+          }
+        }
+      }
+      .directions {
+        @apply col-span-3 border-r-[1px] border-white;
+      }
+      .socials {
+        @include flex-container(column, center, flex-end, nowrap);
+        .ico {
+          @include flex-container(column, center, flex-end, nowrap);
+          p {
+            @apply text-right;
+          }
+        }
+        @apply col-span-2;
+      }
+    }
+    .button {
+      @include flex-center;
+      @apply w-full p-8;
+      a {
+        @apply px-6 py-5 bg-white rounded-md text-[#2c2d2f] text-2xl font-bold;
+      }
+    }
+  }
+  .desktop {
+    @include grid-container(20% 60% 20%, 0, none);
+    @apply max-w-[1650px] w-full  hidden md:grid xl:text-3xl;
+    .logo,
+    .directions,
+    .socials {
+      @include flex-center;
+      @apply h-full w-full p-3;
+    }
+    .logo {
+      a {
+        img {
+          @apply h-16 xl:h-20 2xl:h-24;
+        }
+      }
+    }
+    .directions {
+      @include flex-container(column, center, center, 1rem, nowrap);
+      @apply lg:px-7 border-r-[1px] border-l-[1px] border-white;
+      .icons {
+        @include flex-container(row, space-between, center, 0, nowrap);
+        @apply px-4 xl:px-12 pt-5 2xl:gap-32;
+        .ico {
+          @include flex-container(column, center, center, 1rem, nowrap);
+          img {
+            @apply w-20 2xl:w-24 mb-6;
+          }
+          p {
+            @apply font-light text-xl xl:text-3xl mb-6 w-60 xl:w-96  sm:w-72 text-center;
+          }
+        }
+      }
+
+      .button {
+        @include flex-center;
+        @apply w-full p-3;
+        a {
+          @apply px-6 py-5 bg-white rounded-md text-[#2c2d2f] text-2xl font-bold;
+        }
+      }
+    }
+    .socials {
+      @apply ml-8;
+      @include flex-container(column, center, start, 2rem, nowrap);
+      .imgText {
+        @include flex-container(row, center, center, 2rem, nowrap);
+        img {
+          @apply w-20 mb-6 2xl:w-24;
+        }
+        p {
+          @apply font-light text-xl xl:text-3xl mb-6 text-left;
+        }
+      }
+    }
+  }
+}
