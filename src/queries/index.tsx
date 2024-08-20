@@ -332,6 +332,113 @@ const GET_PAGE_INFO = (id: string) => gql`
               titulo
             }
           }
+          ...on ComponentComponentInspectionsSection {
+            title
+            titulo
+            text
+            texto
+            scheduleTitle 
+            tituloHorario 
+            addInspection
+            agregarInspeccion
+						address
+						direction
+            reserve
+            reservar
+            inspectionDate
+            fechaInspeccion
+            ofertas
+            offers
+            ofertasPlaceholder
+            offersPlaceholder
+            selectStaff
+            seleccionarPersonal
+            allStaff
+            todoPersonal
+            totalPrice
+            precioTotal
+            Calendar
+            Calendario
+            dateBtn
+            fechaBtn
+            confirmation
+            confirmacion
+            back 
+            volver
+            inspectionData
+            datosInspeccion
+            totalEn
+            totalEs 
+            contactInfo
+            infoContacto
+            Name {
+              name 
+              placeholder
+            }
+            Nombre {
+              name 
+              placeholder
+            }
+            Email {
+              name 
+              placeholder
+            }
+            Correo {
+              name 
+              placeholder
+            }
+            Phone {
+              name 
+              placeholder
+            }
+            TelefonoInspeccion {
+              name 
+              placeholder
+            }
+            TextArea {
+              name 
+              placeholder
+            }
+            AreaTexto {
+              name 
+              placeholder
+            }
+            ConfirnInspection
+            ConfirmarInspeccion
+            bgConfirmation {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+            successScreen {
+              title
+              titulo 
+              subtitle 
+              subtitulo
+              goldIcon {
+                data {
+                  attributes {
+                    url 
+                    alternativeText
+                  }
+                }
+              }
+              back 
+              volver 
+              another 
+              otra
+            }
+            bgImage {
+              data {
+                attributes {
+                  url 
+                  alternativeText
+                }
+              }
+            }
+          }
           }
         }
       }
@@ -461,6 +568,69 @@ const GET_SEARCH_BLOG_INFO = gql`
   }
 `
 
+const GET_INSPECTIONS = gql`
+  query {
+    inspections {
+      data {
+        attributes {
+          img {
+            data {
+              attributes {
+                url
+                alternativeText
+              }
+            }
+          }
+          title
+          titulo
+          price
+          engineer {
+            name
+          }
+        }
+      }
+    }
+  }
+`
+
+const GET_DIRECTIONS = gql`
+  query {
+    directions {
+      data {
+        attributes {
+          title
+          Cantons {
+            place
+            price
+          }
+          Districts {
+            place
+            price
+          }
+        }
+      }
+    }
+  }
+`
+
+const INSPECTIONS_HOURS = [
+  { hour: '8:00 a.m.', avaible: true },
+  { hour: '8:30 a.m.', avaible: true },
+  { hour: '9:00 a.m.', avaible: true },
+  { hour: '9:30 a.m.', avaible: false },
+  { hour: '10:50 a.m.', avaible: false },
+  { hour: '11:20 a.m.', avaible: false },
+  { hour: '11:50 a.m.', avaible: false },
+  { hour: '12:20 p.m.', avaible: false },
+  { hour: '12:50 p.m.', avaible: false },
+  { hour: '1:20 p.m.', avaible: true },
+  { hour: '1:50 p.m.', avaible: true },
+  { hour: '2:50 p.m.', avaible: true },
+  { hour: '3:20 p.m.', avaible: true },
+  { hour: '3:50 p.m.', avaible: true },
+  { hour: '4:20 p.m.', avaible: true },
+]
+
 export {
   GET_HEADER_INFO,
   GET_FOOTER_INFO,
@@ -470,4 +640,7 @@ export {
   GET_BLOG_INFO,
   GET_PROJECTS_INFO,
   GET_SEARCH_BLOG_INFO,
+  GET_INSPECTIONS,
+  GET_DIRECTIONS,
+  INSPECTIONS_HOURS,
 }

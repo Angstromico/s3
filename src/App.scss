@@ -40,3 +40,28 @@ input:-webkit-autofill {
 .s3Btn {
   @apply text-white text-3xl md:text-4xl font-bold transition-all duration-500  hover:bg-[#d2bb3f] rounded-xl p-4 md:p-6 bg-black flex gap-2;
 }
+
+.react-datepicker__month-container {
+  width: 100%;
+}
+
+.react-datepicker__week,
+.react-datepicker__day-names {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.react-datepicker__week {
+  @apply my-6;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  @apply flex justify-center items-center w-10 h-10  sm:w-12 sm:h-12;
+}
+
+.react-datepicker__header {
+  @apply bg-white border-none;
+}

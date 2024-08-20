@@ -8,9 +8,11 @@ import { type Children, type BlogInfo } from '@/types'
 import React from 'react'
 
 export const useFunctions = () => {
-  const generateImgSrc = (url: string) => {
+  const generateImgSrc = (url: string, back?: boolean) => {
     const backendUrl = import.meta.env.VITE_APP_BACKEND_IMAGES
-    return backendUrl + url
+    const newUrl = backendUrl + url
+    if (back) return newUrl
+    return url
   }
 
   const iconsInfo = useCallback((ourIcons: Directions | Socials) => {

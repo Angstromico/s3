@@ -49,6 +49,8 @@ export interface TextContent {
   subtitulo?: string
   otherContent?: string
   otroContenido?: string
+  text?: string
+  texto?: string
 }
 
 export type TypeName =
@@ -60,6 +62,7 @@ export type TypeName =
   | 'ComponentComponentAboutProject'
   | 'ComponentComponentProjectsSection'
   | 'ComponentLayoutOptions'
+  | 'ComponentComponentInspectionsSection'
 
 type TypeProjects =
   | 'Residencial'

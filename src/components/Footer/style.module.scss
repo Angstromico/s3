@@ -2,7 +2,7 @@
 
 .footer {
   @include flex-center;
-  @apply bg-[#2c2d2f] pt-4 pb-6 px-8 md:py-12 md:px-12  w-full text-white;
+  @apply bg-[#2c2d2f] pt-4 pb-6 px-8 md:py-12 md:px-12  w-full text-white z-10;
   .mobile {
     @apply block md:hidden;
     .logo {

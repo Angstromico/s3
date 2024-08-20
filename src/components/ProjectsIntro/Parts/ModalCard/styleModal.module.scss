@@ -1,5 +1,5 @@
 .modalCard {
-  @apply fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 pt-48 z-40 w-full text-white overflow-y-auto no-scrollbar;
+  @apply fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 pt-48 z-40 w-full text-white overflow-y-auto;
   .modalContainer {
     @apply w-[95vw] md:w-[80vw] max-w-[1200px]  flex flex-col justify-center items-center z-0 h-full mt-[-77px] sm:mt-12 md:mt-64 overflow-hidden;
   }
@@ -20,7 +20,7 @@
   }
 
   .modalBox {
-    @apply bg-[#5e696a] text-white w-full pb-12 pt-16 md:pb-16 md:pt-20 px-[2rem] md:px-[5rem] overflow-y-auto no-scrollbar h-[600px] sm:h-[700px] md:h-[800px];
+    @apply bg-[#5e696a] text-white w-full pb-12 pt-16 md:pb-16 md:pt-20 px-[2rem] md:px-[5rem] overflow-y-auto h-[600px] sm:h-[700px] md:h-[800px];
     .boxContainer {
       @apply flex justify-center;
     }
