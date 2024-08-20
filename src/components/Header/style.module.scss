@@ -9,9 +9,9 @@
     @apply block md:hidden;
   }
   .items {
-    @apply hidden md:flex justify-between gap-4 xl:gap-16 items-center font-light text-3xl;
+    @apply hidden md:flex justify-between gap-4 xl:gap-16 items-center font-light;
     li {
-      @apply xl:mx-8;
+      @apply xl:mx-8 text-xl lg:text-2xl 2xl:text-3xl;
     }
   }
   li.currentPage {
