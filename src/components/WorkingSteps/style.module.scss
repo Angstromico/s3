@@ -17,7 +17,7 @@
       @apply w-full hidden lg:block;
     }
     img {
-      @apply hidden xl:block absolute right-[45%] top-28 scale-125;
+      @apply hidden xl:block absolute right-[32%] 2xl:right-[45%] top-28 scale-125;
     }
   }
   .secondStep {
@@ -27,7 +27,7 @@
       @apply lg:order-2 lg:ml-32;
     }
     img {
-      @apply left-[18%];
+      @apply left-[10%] 2xl:left-[17%] 3xl:left-[18%];
     }
   }
   .thirdStep {

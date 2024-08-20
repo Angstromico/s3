@@ -22,6 +22,10 @@ export default {
       boxShadow: {
         calendar: '0px 0px 18.8px 0px #00000012',
       },
+      screens: {
+        '3xl': '1700px',
+        // => @media (min-width: 992px) { ... }
+      },
     },
   },
   plugins: [],
