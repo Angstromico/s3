@@ -11,7 +11,7 @@ const BottomCalendar = ({ totalPriceText, submitBtnText }: Props) => {
 
   return (
     <div className='w-full flex flex-col mt-12 mb-5 justify-center items-center md:flex-row md:justify-between gap-5'>
-      <p className='bg-white h-14 rounded-lg text-xl sm:text-2xl md:text-3xl border-2 border-goldS3 w-96 sm:w-[28rem] flex justify-between px-5 py-2 items-center'>
+      <p className='bg-white h-[50px] rounded-lg text-xl sm:text-2xl md:text-3xl border-2 border-goldS3 w-96 sm:w-[28rem] flex justify-between px-5 py-2 items-center'>
         {totalPriceText}{' '}
         <span className='flex gap-2'>
           <span className='line-through text-xl sm:text-2xl md:text-3xl'>
@@ -23,7 +23,7 @@ const BottomCalendar = ({ totalPriceText, submitBtnText }: Props) => {
         </span>
       </p>
       <button
-        className='bg-blackS3 rounded-lg h-14 w-44 sm:w-56 text-white font-bold text-lg sm:text-xl md:text-2xl flex justify-center items-center px-3 py-4'
+        className='bg-blackS3 rounded-lg w-44 sm:w-56 text-white font-bold text-lg sm:text-xl md:text-2xl flex justify-center items-center px-3 py-6 h-[50px]'
         type='submit'
       >
         {submitBtnText}

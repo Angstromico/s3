@@ -41,7 +41,7 @@ const ChosenEngineer = ({
             className='w-full flex gap-3 my-8 flex-wrap flex-col md:flex-row'
           >
             <div className='w-[95%] md:w-[40%] flex gap-3 md:gap-0'>
-              <p className='bg-white text-blackS3 w-full h-20 px-4 text-lg sm:text-xl md:text-2xl rounded-lg min-w-[113px] font-swiss721-bold font-bold flex items-center'>
+              <p className='bg-white text-blackS3 w-full h-20 px-5 text-xl sm:text-2xl md:text-[1.7rem] rounded-lg min-w-[113px] font-swiss721-bold font-bold flex items-center'>
                 {lang === 'en' ? title : titulo}
               </p>
               <img
@@ -51,7 +51,7 @@ const ChosenEngineer = ({
                 alt='Cubo de basura'
               />
             </div>
-            <div className='w-[95%] md:w-[50%] flex gap-3'>
+            <div className='w-[95%] md:w-[58%] flex gap-3'>
               <SelectService
                 engineer={engineer}
                 selectedPhrase={selectedPhrase}

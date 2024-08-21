@@ -9,12 +9,13 @@ interface Props {
 const AddInspections = ({ text, setOpenDialog, behind }: Props) => {
   return (
     <div
-      className='my-16 w-[85%] md:w-[31%] flex gap-3 md:gap-0'
+      className='my-16 w-[85%] md:w-[35%] flex gap-3 md:gap-0'
       onClick={() => setOpenDialog(true)}
     >
+      {/* I want to get the height of this button on console, can you get me the code for that?  */}
       <button
         type='button'
-        className={`bg-goldS3 text-blackS3 w-full h-20 px-4 text-lg sm:text-xl md:text-2xl rounded-lg min-w-[105px] font-swiss721-bold font-bold flex items-center cursor-pointer gap-4  ${
+        className={`bg-goldS3 text-blackS3 w-full h-20 px-5 text-xl sm:text-2xl md:text-[1.7rem] rounded-lg min-w-[105px] font-swiss721-bold font-bold flex items-center cursor-pointer gap-4  ${
           behind ? '' : 'z-50'
         }`}
       >

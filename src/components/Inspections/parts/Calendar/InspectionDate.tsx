@@ -34,12 +34,12 @@ const InspectionDate = ({ title, offers, offersPlaceholder }: Props) => {
         <h3 className='text-6xl font-black mb-1'>{dayAndMonth[0]}</h3>
         <p className='text-2xl mb-4'>{dayAndMonth[1]}</p>
         <p
-          className='mb-1 text-grayS3 font-light line-through text-2xl'
+          className='mb-2 font-light line-through text-[1.6rem]'
           style={{ textDecorationColor: '#D83434' }}
         >
           ${total + 200}
         </p>
-        <p className='font-bold text-3xl'>${total}</p>
+        <p className='font-bold text-4xl'>${total}</p>
       </div>
     )
   }
@@ -53,7 +53,7 @@ const InspectionDate = ({ title, offers, offersPlaceholder }: Props) => {
       </h3>
       <p className='text-xl sm:text-2xl md:text-3xl my-6 gap-3 flex'>
         <span className='font-bold text-blackS3'>{offers}</span>
-        <span className='text-[#787878] font-light'>{offersPlaceholder}</span>
+        <span className='text-[#787878] font-[450]'>{offersPlaceholder}</span>
       </p>
       <div className='flex gap-3 flex-wrap'>
         {colors.map((color, i) => (
