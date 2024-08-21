@@ -39,7 +39,7 @@ const SelectService = ({ selectedPhrase, engineer, j }: Props) => {
         onClick={toggleLis}
       >
         <img
-          className={`absolute top-8 w-6 right-[0.35rem] transition-duration-all ${
+          className={`absolute top-9 w-6 right-[0.35rem] transition-duration-all ${
             showLis ? 'rotate-180' : ''
           }`}
           src={YellowArrow}

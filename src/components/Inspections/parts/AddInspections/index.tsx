@@ -19,7 +19,7 @@ const AddInspections = ({ text, setOpenDialog, behind }: Props) => {
         }`}
       >
         {text}{' '}
-        <span className='text-3xl sm:text-4xl md:text-5xl font-swiss721-light font-light mt-1'>
+        <span className='text-3xl md:text-4xl font-swiss721-light font-light mt-1'>
           +
         </span>
       </button>
