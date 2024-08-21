@@ -15,7 +15,7 @@ const Scheduled = ({
 }: Props) => {
   return (
     <div className='w-[90%] max-w-[1400px] mx-auto my-12 text-left'>
-      <h2 className='text-white md:text-[#2C2D2F] text-xl sm:text-2xl md:text-3xl  font-swiss721-black font-bold my-8'>
+      <h2 className='text-white md:text-[#2C2D2F] text-2xl sm:text-3xl md:text-4xl  font-swiss721-black font-bold my-8'>
         {title}
       </h2>
       <ChoseEngineer

@@ -51,7 +51,7 @@ const ChosenEngineer = ({
                 alt='Cubo de basura'
               />
             </div>
-            <div className='w-[95%] md:w-[55%] flex gap-3'>
+            <div className='w-[95%] md:w-[50%] flex gap-3'>
               <SelectService
                 engineer={engineer}
                 selectedPhrase={selectedPhrase}

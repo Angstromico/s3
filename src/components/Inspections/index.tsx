@@ -171,7 +171,7 @@ const Inspections = ({
             AddInspections={lang === 'en' ? addInspection : agregarInspeccion}
           />
           <div className='w-[90%] max-w-[1400px] mx-auto my-12 text-left'>
-            <h2 className='text-blackS3 text-left text-xl sm:text-2xl md:text-3xl  font-swiss721-black font-bold my-8'>
+            <h2 className='text-blackS3 text-left text-2xl sm:text-3xl md:text-4xl  font-swiss721-black font-bold my-8'>
               {lang === 'en' ? address : direction}
             </h2>
             <Directions

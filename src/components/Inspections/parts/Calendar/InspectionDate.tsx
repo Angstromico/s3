@@ -31,15 +31,15 @@ const InspectionDate = ({ title, offers, offersPlaceholder }: Props) => {
         className='rounded-xl px-12 py-6 text-center'
         style={{ backgroundColor: bg }}
       >
-        <h3 className='text-5xl font-black mb-1'>{dayAndMonth[0]}</h3>
-        <p className='text-xl mb-4'>{dayAndMonth[1]}</p>
+        <h3 className='text-6xl font-black mb-1'>{dayAndMonth[0]}</h3>
+        <p className='text-2xl mb-4'>{dayAndMonth[1]}</p>
         <p
-          className='mb-1 text-grayS3 font-light line-through text-xl'
+          className='mb-1 text-grayS3 font-light line-through text-2xl'
           style={{ textDecorationColor: '#D83434' }}
         >
           ${total + 200}
         </p>
-        <p className='font-bold text-2xl'>${total}</p>
+        <p className='font-bold text-3xl'>${total}</p>
       </div>
     )
   }
@@ -48,10 +48,10 @@ const InspectionDate = ({ title, offers, offersPlaceholder }: Props) => {
 
   return (
     <div className='w-[90%] max-w-[1400px] mx-auto mt-32 mb-6 text-left'>
-      <h3 className='text-blackS3 text-left text-xl sm:text-2xl md:text-3xl  font-swiss721-black font-bold my-8'>
+      <h3 className='text-blackS3 text-left text-2xl sm:text-3xl md:text-4xl  font-swiss721-black font-bold my-8'>
         {title}
       </h3>
-      <p className='text-lg sm:text-xl md:text-2xl my-6 gap-3 flex'>
+      <p className='text-xl sm:text-2xl md:text-3xl my-6 gap-3 flex'>
         <span className='font-bold text-blackS3'>{offers}</span>
         <span className='text-[#787878] font-light'>{offersPlaceholder}</span>
       </p>

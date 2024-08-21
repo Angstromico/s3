@@ -35,7 +35,7 @@ const SelectService = ({ selectedPhrase, engineer, j }: Props) => {
   return (
     <div className='relative w-full flex gap-3'>
       <ul
-        className='bg-blackS3 text-white w-full h-20 px-4 text-lg sm:text-xl md:text-2xl rounded-lg min-w-[130px] font-swiss721-bold font-bold flex flex-col justify-center items-center relative text-center cursor-pointer'
+        className='bg-blackS3 text-white w-full h-20 px-4 text-lg sm:text-xl md:text-2xl rounded-lg min-w-[130px] font-swiss721-bold font-bold flex flex-col justify-center items-center relative cursor-pointer'
         onClick={toggleLis}
       >
         <img

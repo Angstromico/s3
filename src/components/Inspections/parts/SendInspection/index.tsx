@@ -111,10 +111,10 @@ const SendInspection = ({
             </p>
           </div>
           <div className='w-full bg-white text-blackS3 rounded-3xl pt-8 pb-10 px-4 md:px-6 shadow-calendar text-left'>
-            <h3 className='text-3xl md:text-4xl mb-5 font-black'>
+            <h3 className='text-4xl md:text-5xl mb-5 font-black'>
               {inspectionData}
             </h3>
-            <h4 className='text-xl md:text-2xl mb-5 font-semibold'>
+            <h4 className='text-2xl md:text-3xl mb-5 font-semibold'>
               {selectedDirection.province}, {selectedDirection.cantons},{' '}
               {selectedDirection.districts}{' '}
               <span className='ml-4'>{formattedDate}</span>
@@ -124,7 +124,7 @@ const SendInspection = ({
 
               return (
                 <h4
-                  className='text-xl md:text-2xl mb-5 font-semibold w-full flex justify-between'
+                  className='text-2xl md:text-3xl mb-5 font-semibold w-full flex justify-between'
                   key={i}
                 >
                   <span>
@@ -140,7 +140,7 @@ const SendInspection = ({
               )
             })}
             <div className='w-full mb-6 bg-blackS3 h-[1.5px]'></div>
-            <h4 className='text-xl md:text-2xl mb-16 font-semibold w-full flex justify-between'>
+            <h4 className='text-2xl md:text-3xl mb-16 font-semibold w-full flex justify-between'>
               <span>{total}</span>{' '}
               <span className='text-3xl md:text-4xl font-bold'>
                 $ {totalToPay}
@@ -244,7 +244,7 @@ const SendInspection = ({
               </div>
               <div className='w-full flex justify-center'>
                 <button
-                  className='bg-blackS3 text-white px-3 py-5 text-lg md:text-xl rounded-lg mt-12 mb-8'
+                  className='bg-blackS3 text-white px-3 py-5 text-xl md:text-2xl font-bold rounded-lg mt-12 mb-8'
                   type='submit'
                 >
                   {ConfirnInspection}

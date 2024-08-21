@@ -122,7 +122,7 @@ const CalendarInspection = ({
               format(subDays(date, 1), 'yyyy-MM-dd') <
               format(new Date(), 'yyyy-MM-dd')
             }
-            className={`text-xl ${
+            className={`text-2xl ${
               format(subDays(date, 1), 'yyyy-MM-dd') <
               format(new Date(), 'yyyy-MM-dd')
                 ? 'text-gray-400 cursor-not-allowed'
@@ -134,12 +134,12 @@ const CalendarInspection = ({
           <button
             type='button'
             onClick={increaseDay}
-            className='text-xl text-black cursor-pointer'
+            className='text-2xl text-black cursor-pointer'
           >
             &gt;
           </button>
         </div>
-        <h6 className='text-lg'>{formattedDate}</h6>
+        <h6 className='text-xl'>{formattedDate}</h6>
       </div>
     )
   }
@@ -166,11 +166,11 @@ const CalendarInspection = ({
         onSubmit={handleSubmit}
         className='w-[90%] max-w-[1400px] mx-auto mt-32 mb-6 text-left'
       >
-        <h3 className='text-blackS3 font-black text-lg sm:text-xl md:text-2xl'>
+        <h3 className='text-blackS3 font-black text-xl sm:text-2xl md:text-3xl'>
           {title}
         </h3>
         <div className='my-6 w-full shadow-calendar rounded-lg px-2 sm:px-3 pt-5 py-8 bg-white'>
-          <h5 className='text-center text-md sm:text-lg md:text-xl mb-6'>
+          <h5 className='text-center text-lg sm:text-xl md:text-2xl mb-6'>
             {textdate}
           </h5>
           <div className='flex flex-col sm:flex-row-reverse w-full gap-8 sm:gap-16 md:gap-32 py-12'>
@@ -199,7 +199,7 @@ const CalendarInspection = ({
                   ? 'text-gray-400'
                   : ''
               }
-              calendarClassName='w-full text-md sm:text-lg md:text-xl max-w-2xl mx-auto border-none my-6'
+              calendarClassName='w-full text-md sm:text-lg md:text-xl max-w-3xl mx-auto border-none my-6'
             />
           </div>
         </div>

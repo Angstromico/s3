@@ -24,7 +24,6 @@ export default {
       },
       screens: {
         '3xl': '1700px',
-        // => @media (min-width: 992px) { ... }
       },
     },
   },
