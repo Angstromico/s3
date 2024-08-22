@@ -166,7 +166,7 @@ const CalendarInspection = ({
         onSubmit={handleSubmit}
         className='w-[90%] max-w-[1400px] mx-auto mt-32 mb-6 text-left'
       >
-        <h3 className='text-blackS3 font-black text-xl sm:text-2xl md:text-3xl'>
+        <h3 className='text-blackS3 font-black text-3xl sm:text-4xl md:text-5xl'>
           {title}
         </h3>
         <div className='my-6 w-full shadow-calendar rounded-lg px-2 sm:px-3 pt-5 py-8 bg-white'>
